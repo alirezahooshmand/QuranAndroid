@@ -1,8 +1,12 @@
 package com.example.quran
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
+import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.io.BufferedReader
@@ -42,6 +46,29 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapterSoreh
         recyclerView.scrollToPosition(soreh.toInt())
     }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        val inflat = menuInflater
+        inflat.inflate(R.menu.my_options_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+//        if (item.itemId == R.id.setting) {
+//            Toast.makeText(this, "setting click", Toast.LENGTH_SHORT).show()
+//            startActivity(Intent(this, SettingsActivity::class.java))
+//        } else
+        if (item.itemId == R.id.about) {
+            Toast.makeText(this, "about click", Toast.LENGTH_SHORT).show()
+            startActivity(Intent(this, ActivityAbout::class.java))
+        }
+//            else
+//                if (item.itemId == R.id.help) {
+//                    Toast.makeText(this, "Help Click ....", Toast.LENGTH_SHORT).show()
+//                    startActivity(Intent(this, ActivityHelp::class.java))
+//                }
+        return super.onOptionsItemSelected(item)
+    }
+
 
     override fun onDestroy() {
         super.onDestroy()

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:title="Setting"
-        android:id="@+id/setting"
-        android:icon="@android:drawable/ic_menu_set_as"
-        />
+<!--    <item-->
+<!--        android:title="Setting"-->
+<!--        android:id="@+id/setting"-->
+<!--        android:icon="@android:drawable/ic_menu_set_as"-->
+<!--        />-->
     <item
         android:title="About"
         android:id="@+id/about"
         android:icon="@android:drawable/ic_notification_clear_all"
     />
-    <item android:id="@+id/help"
-    android:title="Help" />
+<!--    <item android:id="@+id/help"-->
+<!--    android:title="Help" />-->
     </menu>

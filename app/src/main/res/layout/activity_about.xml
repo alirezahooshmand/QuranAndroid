@@ -38,18 +38,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="108dp"
                 android:gravity="center"
+                android:padding="10dp"
                 android:text="ALIREZA HOOSHMAND"
-                android:textSize="36sp"
-                android:padding="10dp"/>
+                android:textSize="30sp" />
 
-            <TextView
-                android:id="@+id/textView6"
+            <Button
+                android:id="@+id/ButtonMail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="alireza.hooshmand@gmail.com"
-                android:textSize="36sp"
-                android:padding="10dp"/>
+                android:onClick="aboutMailtoClick"
+                android:padding="10dp"
+                android:paddingTop="70dp"
+                android:text="alireza.houshmand@gmail.com"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>

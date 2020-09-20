@@ -152,18 +152,19 @@ class ActivitySoreh : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == R.id.setting) {
-            Toast.makeText(this, "setting click", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, SettingsActivity::class.java))
-        } else
+//        if (item.itemId == R.id.setting) {
+//            Toast.makeText(this, "setting click", Toast.LENGTH_SHORT).show()
+//            startActivity(Intent(this, SettingsActivity::class.java))
+//        } else
             if (item.itemId == R.id.about) {
                 Toast.makeText(this, "about click", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, ActivityAbout::class.java))
-            } else
-                if (item.itemId == R.id.help) {
-                    Toast.makeText(this, "Help Click ....", Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this, ActivityHelp::class.java))
-                }
+            }
+//            else
+//                if (item.itemId == R.id.help) {
+//                    Toast.makeText(this, "Help Click ....", Toast.LENGTH_SHORT).show()
+//                    startActivity(Intent(this, ActivityHelp::class.java))
+//                }
         return super.onOptionsItemSelected(item)
     }
 
